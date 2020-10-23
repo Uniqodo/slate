@@ -59,8 +59,8 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
-  font-weight: bold;
+  //font-size: 13px;
+  //font-weight: bold;
 
   // language selector for mobile devices
   .lang-selector {
@@ -75,7 +75,7 @@ html, body {
   .logo {
     display: block;
     max-width: 100%;
-    margin: 10px 17px;
+    margin: 31px 15px;
   }
 
   &>.search {
@@ -83,22 +83,21 @@ html, body {
 
     input {
       background: $nav-bg;
-      border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
-      padding: 6px 0 6px 20px;
+      border: 0.3px solid $search-box-border-color;
+      padding: 6px 0 6px 25px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - ($nav-padding*2);
       outline: none;
       color: $nav-text;
-      border-radius: 0; /* ios has a default border radius */
+      border-radius: 9px; /* ios has a default border radius */
     }
 
     &:before {
       position: absolute;
-      top: 17px;
-      left: $nav-padding;
-      color: $nav-text;
+      top: 19px;
+      left: 21px;
+      color: $search-box-border-color;
       @extend %icon-search;
     }
   }
@@ -121,6 +120,7 @@ html, body {
     li {
       margin: 1em $nav-padding;
       line-height: 1;
+      padding-bottom: 5px;
     }
 
     a {
@@ -142,6 +142,7 @@ html, body {
     margin: 0;
     padding: 0;
     line-height: 28px;
+    padding-bottom: 5px;
   }
 
   li {
@@ -166,12 +167,13 @@ html, body {
   .toc-list-h2 {
     display: none;
     background-color: $nav-subitem-bg;
-    font-weight: 500;
+    padding-bottom: 5px;
+    //font-weight: 500;
   }
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
-    font-size: 12px;
+    //font-size: 12px;
   }
 
   .toc-footer {
@@ -346,15 +348,11 @@ html, body {
   }
 
   h1 {
-    @extend %header-font;
-    font-size: 25px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-bottom: $h1-margin-bottom;
-    margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    font-size: 30px;
+    padding-top: 1em;
+    border-top: 1px solid #d6d6d6;
+    margin-top: 4em;
+    margin-bottom: 1em;
   }
 
   h1:first-child, div:first-child + h1 {

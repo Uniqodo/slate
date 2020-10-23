@@ -21,7 +21,8 @@ Options:
 
 
 run_build() {
-  bundle exec middleman build --clean
+  #bundle exec middleman build --clean
+  docker exec -it slate /bin/bash -c "bundle exec middleman build"
 }
 
 parse_args() {
